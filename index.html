@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- SEO: Title -->
+    <title>简易API中转站 | AI大模型API免费接口：ChatGPT/Claude/Deepseek 国内直连稳定快速</title>
+
+    <!-- SEO: Description -->
+    <meta name="description" content="专业AI大模型API中转服务平台。提供ChatGPT API、Claude API、Deepseek API等免费接口，支持GPT-4o, Claude 3.5, Deepseek Coder等热门模型。国内直连，稳定快速，低成本，注册即送免费额度。告别API访问难题！">
+
+    <!-- SEO: Keywords -->
+    <meta name="keywords" content="API中转站, AI API, 大模型API, 免费API, ChatGPT API, Claude API, Deepseek API, OpenAI API Key, 国内直连API">
+
+    <!-- Open Graph / Twitter Meta Tags (For Social Sharing) -->
+    <meta property="og:title" content="简易API中转站 | AI大模型API免费接口 国内直连">
+    <meta property="og:description" content="一站式AI大模型API中转服务，支持ChatGPT/Claude/Deepseek等，国内直连稳定快速，注册送免费额度！">
+    <meta property="og:url" content="https://jeniya.top/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="简易API中转站 | AI大模型API免费接口 国内直连">
+    <meta name="twitter:description" content="一站式AI大模型API中转服务，支持ChatGPT/Claude/Deepseek等，国内直连稳定快速，注册送免费额度！">
+
+    <!-- Standard Meta Tags -->
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='content-language' content='zh-CN'>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/openai.png" type="image/x-icon">
+
+    <!-- Bing Webmaster Verification (Optional) -->
+    <meta name="msvalidate.01" content="36CC1147BAC558447DA0D92095C7B6FA" />
+
+    <!-- Preload Fonts (Optional but good for performance if using custom fonts) -->
+    <!-- <link rel="preload" href="/path/to/your/font.woff2" as="font" type="font/woff2" crossorigin> -->
+
+
+    <!-- Styles -->
+    <style>
+        :root {
+            --dark-bg: #121212; /* Deep dark background */
+            --card-bg: #1e1e1e; /* Slightly lighter dark for cards */
+            --text-color: #e0e0e0; /* Light grey text */
+            --heading-color: #ffffff; /* White headings */
+            --accent-color: #00bcd4; /* Teal/Cyan accent color */
+            --button-color: var(--accent-color);
+            --button-hover-color: #008ba3; /* Darker teal */
+            --border-color: #333; /* Dark grey border */
+            --code-bg: #2c2c2c; /* Darker grey for code */
+            --highlight-color: var(--accent-color);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.7; /* Slightly increased line height for readability */
+            scroll-behavior: smooth;
+            overflow-x: hidden; /* Prevent horizontal scroll caused by potential effects */
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section - Enhanced */
+        .hero {
+            position: relative; /* Needed for absolute positioning of pseudo-element */
+            text-align: center;
+            padding: 100px 20px; /* More vertical space */
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Example gradient */
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite; /* Subtle background animation */
+            color: white; /* Ensure text is readable on gradient */
+            overflow: hidden; /* Hide animating gradient overflow */
+        }
+
+        /* Optional: Overlay for gradient */
+        .hero::before {
+             content: '';
+             position: absolute;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+             z-index: 1;
+        }
+
+
+        .hero .container {
+             position: relative; /* Bring container content above overlay */
+             z-index: 2;
+        }
+
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+
+        .hero h1 {
+            font-size: 48px; /* Larger heading */
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for contrast */
+        }
+
+        .hero p {
+            font-size: 22px; /* Larger intro text */
+            margin-bottom: 40px;
+            opacity: 0.9; /* Slightly less prominent than heading */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px; /* More padding */
+            background-color: var(--button-color);
+            color: var(--heading-color); /* White text on button */
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 20px; /* Larger font */
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+        }
+
+        .button:hover {
+            background-color: var(--button-hover-color);
+            transform: translateY(-3px); /* More pronounced lift */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+        }
+
+        /* Date style in hero */
+        .hero .update-date {
+             font-size: 14px;
+             color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+             margin-top: 30px; /* More space above date */
+        }
+
+
+        /* Content Sections - Card Style */
+        .content-section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            margin: 30px auto; /* Center and space out cards */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* More prominent shadow for cards */
+            border: 1px solid var(--border-color); /* Subtle border */
+        }
+
+        .content-section h2 {
+            font-size: 28px;
+            color: var(--heading-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color); /* Accent colored separator */
+            padding-bottom: 10px;
+        }
+         .content-section h3 {
+            font-size: 22px;
+            color: var(--heading-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: var(--accent-color); /* Highlight subsections */
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        .content-section ul, .content-section ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            color: var(--text-color);
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+        }
+         .content-section li strong {
+             color: var(--heading-color); /* Make strong text stand out */
+         }
+
+
+        /* Table Styling */
+        .content-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .content-section th, .content-section td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        .content-section th {
+            background-color: var(--dark-bg); /* Use dark background for table headers */
+            color: var(--heading-color);
+            font-weight: bold;
+        }
+
+         .content-section tr:nth-child(even) { /* Zebra striping for rows */
+            background-color: #242424; /* Slightly different background for even rows */
+        }
+
+
+        /* Code Block Styling */
+        .content-section pre {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin-top: 20px;
+            font-size: 15px; /* Slightly larger code font */
+            line-height: 1.5;
+            color: #b5cea8; /* Example code color */
+            border: 1px solid var(--border-color);
+        }
+         .content-section code {
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            color: #dcdcaa; /* Example code color */
+        }
+
+
+        /* Link Styles */
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--button-hover-color); /* Darker accent on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Highlight Style - Using accent color */
+        .site-highlight {
+            font-weight: bold;
+            color: var(--highlight-color);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            .button {
+                font-size: 18px;
+                padding: 12px 25px;
+            }
+
+            .content-section {
+                padding: 20px;
+                margin: 20px auto;
+            }
+
+            .content-section h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+             .content-section h3 {
+                font-size: 20px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .content-section th, .content-section td {
+                padding: 10px;
+            }
+
+            /* Stack table rows on small screens */
+             .content-section table,
+             .content-section thead,
+             .content-section tbody,
+             .content-section th,
+             .content-section td,
+             .content-section tr {
+                display: block;
+            }
+
+            .content-section thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .content-section tr { border: 1px solid var(--border-color); margin-bottom: 15px; border-radius: 4px; }
+
+            .content-section td {
+                border: none;
+                border-bottom: 1px solid var(--border-color);
+                position: relative;
+                padding-left: 50%; /* Make space for the label */
+                text-align: right; /* Align cell content to the right */
+            }
+
+            .content-section td::before {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 45%; /* Adjust width as needed */
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                content: attr(data-label); /* Use data-label attribute */
+                text-align: left; /* Align label to the left */
+                color: var(--accent-color); /* Label color */
+            }
+             /* Remove last border bottom from td in a row */
+            .content-section tr td:last-child {
+                border-bottom: none;
+            }
+            .content-section tr:nth-child(even) { /* Adjust zebra striping for stacked rows */
+                background-color: transparent; /* Remove row background */
+            }
+            .content-section tr:nth-child(even) td {
+                 background-color: #242424; /* Apply background to individual cells */
+            }
+             .content-section tr:nth-child(odd) td {
+                 background-color: var(--card-bg);
+             }
+
+        }
+         @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+             .content-section h2 {
+                font-size: 20px;
+            }
+             .content-section h3 {
+                font-size: 18px;
+            }
+             .content-section td::before {
+                 width: 40%;
+             }
+         }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="container">
+            <!-- SEO: H1 - Main Heading -->
+            <h1><span class="site-highlight">简易API</span>中转站</h1>
+            <p>AI大模型API中转服务 — <strong><span class="site-highlight">国内直连</span> | <span class="site-highlight">稳定快速</span> | <span class="site-highlight">低成本</span></strong></p>
+            <p>一站式解决ChatGPT、Claude、Deepseek等API接入难题</p>
+
+            <!-- CTA Button -->
+            <a href="https://jeniya.top/" target="_blank" class="button">免费注册领取API额度</a>
+
+            <!-- Optional: Date -->
+            <p class="update-date">最新更新日期: <span id="curdate"></span></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <main> <!-- Use main tag for main content -->
+
+            <!-- Section 1: Introduction & Why Choose Us -->
+            <section class="content-section">
+                <h2>为什么选择<span class="site-highlight">简易API中转站</span>？</h2>
+                <p><span class="site-highlight">简易API中转站</span>致力于为国内开发者和企业提供<strong>高效、稳定、经济</strong>的AI大模型API接入方案。我们是您连接全球顶尖AI能力的可靠桥梁。</p>
+
+                <h3>核心优势：</h3>
+                <ul>
+                    <li>✅ <strong>高速稳定</strong>：国内多节点部署，API请求<span class="site-highlight">平均延迟仅50-100ms</span>。</li>
+                    <li>✅ <strong>成本优化</strong>：比直接使用官方API<span class="site-highlight">降低20-40%成本</span>，按量计费，无额外隐藏费用。</li>
+                    <li>✅ <strong>全模型支持</strong>：一站式集成<span class="site-highlight">ChatGPT、Claude、Deepseek</span>等主流及热门新模型。</li>
+                    <li>✅ <strong>中文友好</strong>：提供详细的<span class="site-highlight">中文接口文档</span>和本地化技术支持。</li>
+                    <li>✅ <strong>快速启动</strong>：注册即<span class="site-highlight">赠送免费测试额度</span>，5分钟完成API配置。</li>
+                </ul>
+            </section>
+
+            <!-- Section 2: Supported APIs -->
+            <section class="content-section">
+                <h2>我们支持的<span class="site-highlight">AI大模型API</span></h2>
+                 <p>接入<span class="site-highlight">简易API中转站</span>，即可灵活调用以下领先的AI模型：</p>
+                <ul>
+                    <li><a href="https://jeniya.top/" target="_blank"><span class="site-highlight"><strong>OpenAI API</strong></span></a>: <span class="site-highlight">GPT-4o, GPT-4 Turbo, GPT-3.5</span> 等。广泛适用于对话、生成、分析等任务。</li>
+                    <li><a href="https://jeniya.top/" target="_blank"><span class="site-highlight"><strong>Claude API</strong></span></a>: <span class="site-highlight">Claude 3.5 Sonnet, Claude 3 Opus/Haiku</span>。卓越的长文本理解和高质量内容创作能力。</li>
+                    <li><a href="https://jeniya.top/" target="_blank"><span class="site-highlight"><strong>Deepseek API</strong></span></a>: <span class="site-highlight">Deepseek Coder, Deepseek Chat</span>。为代码开发和通用对话提供强大支持。</li>
+                    <li><span class="site-highlight">更多</span>: 持续评估和接入市场表现优秀的新模型...</li>
+                </ul>
+                 <p>所有模型均可通过统一的API接口进行调用，极大简化您的开发流程。</p>
+            </section>
+
+            <!-- Section 3: Comparison -->
+            <section class="content-section">
+                 <h2><span class="site-highlight">简易API中转站</span> VS 官方直接访问</h2>
+                <p>还在为访问官方API而烦恼吗？看看我们的优势：</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>对比项</th>
+                            <th>官方API (国内访问)</th>
+                            <th><span class="site-highlight">简易API中转站</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="访问方式">访问方式</td>
+                            <td>需要复杂且不稳定的网络工具</td>
+                            <td data-label="访问方式">✅ <span class="site-highlight">国内网络直接访问</span></td>
+                        </tr>
+                        <tr>
+                            <td data-label="接口延迟">接口延迟</td>
+                            <td>通常较高，易受网络波动影响</td>
+                            <td data-label="接口延迟">✅ <span class="site-highlight">超低延迟</span>，响应迅速</td>
+                        </tr>
+                         <tr>
+                            <td data-label="模型支持">模型支持</td>
+                            <td>仅支持本平台模型</td>
+                            <td data-label="模型支持">✅ <span class="site-highlight">一站式集成</span>多平台模型</td>
+                        </tr>
+                        <tr>
+                            <td data-label="成本">成本</td>
+                            <td>官方美元定价，汇率波动，可能存在支付障碍</td>
+                            <td data-label="成本">✅ <span class="site-highlight">更优人民币价格</span>，多种支付方式，按量计费</td>
+                        </tr>
+                        <tr>
+                            <td data-label="文档与支持">文档与支持</td>
+                            <td>英文为主，技术支持响应周期长</td>
+                            <td data-label="文档与支持">✅ <span class="site-highlight">全中文文档</span>，<span class="site-highlight">7x24本地化技术支持</span></td>
+                        </tr>
+                         <tr>
+                            <td data-label="支付与额度">支付与额度</td>
+                            <td>可能需要信用卡，最低充值额度较高</td>
+                            <td data-label="支付与额度">✅ 支持多种国内支付方式，<span class="site-highlight">注册即送免费额度</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Section 4: How to Use -->
+            <section class="content-section">
+                <h2>快速开始：使用<span class="site-highlight">简易API中转服务</span></h2>
+                <p>仅需简单几步，即可接入强大的AI能力：</p>
+                <ol>
+                    <li>访问<a href="https://jeniya.top/" target="_blank"><span class="site-highlight">简易API中转站官网</span></a> (<span class="site-highlight">https://jeniya.top/</span>)，完成新用户注册。</li>
+                    <li>登录您的账户控制台，在“API管理”页面生成您的<span class="site-highlight">专属API Key</span>。</li>
+                    <li>查阅我们的<span class="site-highlight">中文接口文档</span>，了解不同模型的调用方法。</li>
+                    <li>在您的代码中，将官方API的请求地址替换为<span class="site-highlight">简易API中转站</span>提供的接口地址。</li>
+                    <li>使用您的API Key进行调用。新用户可直接使用<span class="site-highlight">赠送的免费额度</span>进行测试。</li>
+                </ol>
+
+                <h3>API调用示例 (Python):</h3>
+                <pre><code class="language-python">
+import requests
+import json # Import json library for better output
+
+# 替换为您的简易API中转站 Key
+API_KEY = "your_jeniya_api_key_xxxxxxxxxx"
+# 替换为简易API中转站的通用接口地址 (通常与OpenAI兼容)
+# 根据文档，地址可能是 https://api.jeniya.top/v1/chat/completions 或其他
+API_URL = "https://api.jeniya.top/v1/chat/completions"
+
+headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
+
+# 请求体结构与OpenAI等官方API高度兼容
+data = {
+    # 选择您需要的模型，名称请查阅简易API中转站文档
+    # 例如: "gpt-4o", "claude-3-5-sonnet-20240620", "deepseek-coder"
+    "model": "gpt-4o",
+    "messages": [
+        {"role": "system", "content": "你是一个有帮助的AI助手。"},
+        {"role": "user", "content": "简述使用简易API中转站的好处。"}
+    ],
+    # 可以添加其他参数，如 temperature, max_tokens, stream等
+    "max_tokens": 500,
+    "temperature": 0.7,
+    "stream": False # 设置为 True 开启流式传输
+}
+
+print(f"正在向 {API_URL} 发送请求...")
+
+try:
+    # 发送POST请求
+    response = requests.post(API_URL, headers=headers, json=data, timeout=60) # 设置超时
+
+    # 检查HTTP状态码
+    response.raise_for_status()
+
+    # 解析并打印响应
+    response_json = response.json()
+    print("请求成功，响应内容:")
+    print(json.dumps(response_json, indent=2, ensure_ascii=False)) # Pretty print JSON
+
+except requests.exceptions.Timeout:
+    print("请求超时！")
+except requests.exceptions.RequestException as e:
+    print(f"API请求出错: {e}")
+    if response is not None:
+         print(f"HTTP状态码: {response.status_code}")
+         print(f"响应体: {response.text}")
+except json.JSONDecodeError:
+    print("响应不是有效的JSON格式。")
+    if response is not None:
+        print(f"原始响应文本:\n{response.text}")
+except Exception as e:
+    print(f"发生未知错误: {e}")
+
+                </code></pre>
+            </section>
+
+            <!-- Section 5: FAQ -->
+            <section class="content-section">
+                <h2><span class="site-highlight">简易API中转站</span>常见问题</h2>
+
+                <h3>1. API密钥安全吗？会被滥用吗？</h3>
+                <p>您的API Key需要妥善保管。我们平台采取多重安全措施保护您的账户和密钥。强烈建议您为不同的应用创建独立的API Key，并在不需要时及时禁用或删除。</p>
+
+                <h3>2. 如何监控我的API使用量和余额？</h3>
+                <p>登录<span class="site-highlight">简易API中转站</span>控制台，在“账户概览”或“用量统计”页面，您可以实时查看您的API调用量、Tokens消耗以及账户余额。</p>
+
+                <h3>3. 遇到问题怎么办？有技术支持吗？</h3>
+                <p>我们提供<span class="site-highlight">7x24小时本地化技术支持</span>。您可以通过平台内置的支持系统提交工单，或加入我们的微信/QQ开发者交流群，获得及时帮助。</p>
+
+                 <h3>4. 支持哪些支付方式？</h3>
+                <p>支持微信支付、支付宝等国内主流支付方式，充值便捷快速。</p>
+            </section>
+
+            <!-- Section 6: Call to Action / Conclusion -->
+             <section class="content-section" style="text-align: center;">
+                <h2>立即加入，开启您的AI开发之旅！</h2>
+                <p>不再受限于网络和成本，高效使用<span class="site-highlight">ChatGPT、Claude、Deepseek</span>等顶级AI能力！</p>
+                <p>访问<a href="https://jeniya.top/" target="_blank" class="site-highlight">https://jeniya.top/</a>，立即免费注册，获取您的API Key和测试额度！</p>
+                 <a href="https://jeniya.top/" target="_blank" class="button" style="margin-top: 20px;">立即注册并获取免费额度</a>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 简易API中转站. All rights reserved.</p>
+        <!-- Add links like Privacy Policy, Terms of Service if applicable -->
+    </footer>
+
+    <script>
+        // Script to display current date
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}年${month}月${day}日`;
+        }
+
+        const dateElement = document.getElementById('curdate');
+        if (dateElement) {
+            dateElement.textContent = formatDate(new Date());
+        }
+
+        // Script for responsive stacked table headers on mobile
+        document.querySelectorAll('.content-section table').forEach(table => {
+            const headers = [];
+            // Get headers from thead
+            table.querySelectorAll('thead th').forEach(header => {
+                headers.push(header.textContent.trim());
+            });
+
+            // Add data-label to each td
+            table.querySelectorAll('tbody tr').forEach(row => {
+                row.querySelectorAll('td').forEach((cell, index) => {
+                    if (headers[index]) {
+                        cell.setAttribute('data-label', headers[index]); // Removed colon from data-label content
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
